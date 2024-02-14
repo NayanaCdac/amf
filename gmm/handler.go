@@ -45,7 +45,7 @@ const (
 	PRIORITIZED_SERVICES_ONLY = "PRIORITIZED_SERVICES_ONLY"
 	OUT_OF_LADN_SERVICE_AREA  = "OUT_OF_LADN_SERVICE_AREA"
 )
-
+//handle ULNASTransport
 func HandleULNASTransport(ue *context.AmfUe, anType models.AccessType,
 	ulNasTransport *nasMessage.ULNASTransport,
 ) error {
