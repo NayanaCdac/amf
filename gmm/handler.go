@@ -126,7 +126,7 @@ func transport5GSMMessage(ue *context.AmfUe, anType models.AccessType,
 				smContextExist = false
 			}
 		}
-		//comment added
+		
 		if !smContextExist {
 			msg := new(nas.Message)
 			if err := msg.PlainNasDecode(&smMessage); err != nil {
