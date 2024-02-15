@@ -45,7 +45,7 @@ const (
 	PRIORITIZED_SERVICES_ONLY = "PRIORITIZED_SERVICES_ONLY"
 	OUT_OF_LADN_SERVICE_AREA  = "OUT_OF_LADN_SERVICE_AREA"
 )
-//handle ULNASTransport
+
 func HandleULNASTransport(ue *context.AmfUe, anType models.AccessType,
 	ulNasTransport *nasMessage.ULNASTransport,
 ) error {
@@ -126,7 +126,7 @@ func transport5GSMMessage(ue *context.AmfUe, anType models.AccessType,
 				smContextExist = false
 			}
 		}
-
+		//comment added
 		if !smContextExist {
 			msg := new(nas.Message)
 			if err := msg.PlainNasDecode(&smMessage); err != nil {
