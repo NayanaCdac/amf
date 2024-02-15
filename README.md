@@ -5,7 +5,7 @@ Copyright 2019 free5GC.org
 SPDX-License-Identifier: Apache-2.0
 
 -->
-# AMF
+# amf
 
 It is a control plane function in the 5G core network. AMF supports termination of NAS signalling, 
 NAS ciphering & integrity protection, registration management, connection management, mobility 
