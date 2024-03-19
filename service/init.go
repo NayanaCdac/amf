@@ -294,7 +294,7 @@ func (amf *AMF) FilterCli(c *cli.Context) (args []string) {
 }
 
 func (amf *AMF) Start() {
-	initLog.Infoln("Server started")
+	initLog.Infoln("Server started by nayana")
 	var err error
 
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
